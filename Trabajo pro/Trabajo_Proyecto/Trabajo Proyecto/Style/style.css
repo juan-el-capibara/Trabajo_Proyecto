@@ -1,48 +1,83 @@
 *{
-    background-color: moccasin;
+    background-color:#033B3D;
+    color: white;
 }
 a{
     text-decoration: none;
-    font-size: 50px;
-    position: relative;
-    
-    left: 600px;
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    color: green;
-    background-color: salmon;
-    border: 5px solid black;
+    width: 10px;
+    
+    color: white;
     border-radius: 10px;
+}
+a:hover{
+    padding: 10px;
+    background-color:#0D4A3A;
 }
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 5%;
 }
-.banner{
-    width: auto;
+.div_ba{
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.h1_title{
+.div_title{
     font-size: 50px;
     font-family:Arial, Helvetica, sans-serif ;
     position: relative;
     left: 50px;
+    margin: auto 0;
+    width: 400px;
+}
+.grid_1cont{
+    padding: 2%;
 }
 .grid_1{
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: 1fr 1fr;
     padding: auto;
-    border: 5px double black;
+    border: 5px double #2D5731;
 }
 .coteiner_1{
     display: grid;
     grid-template-rows: auto;
+    border: #2D5731;
+
+}
+
+.grid_2cont{
+    padding: 2%;
 
 }
 .grid_2{
+    display: flex;
     display: grid;
-    grid-template-columns: auto  auto auto;
+    grid-template-columns: auto ;
+    border: 5px double #2D5731;
     padding: auto;
+    justify-content: center;
+
+    
+    
 }
 .coteiner_2{
+    display: grid;
+    grid-template-rows: auto;
+}
+.grid_3cont{
+    padding: 2%;
+}
+.grid_3{
+    display: grid;
+    grid-template-columns: auto ;
+    padding: auto;
+    border: 5px double #2D5731;
+}
+.conteiner_3{
     display: grid;
     grid-template-rows: auto;
 }
