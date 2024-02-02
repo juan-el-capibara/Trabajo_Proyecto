@@ -7,23 +7,108 @@
     <title>Contactanos</title>
 </head>
 <body>
-    <header>
-        <div class="div_title">Campus Shop</div>
-        <nav>
+        <nav class="nav">
 
-           <a href="Quines_somos.html">Quienes somos</a>
-           <a href="Catalogo.html">Catalogo</a>
-           <a href="Contactos.html">Contactenos</a>
-           
-        </nav>
-    </header> 
+            <div class="nav__container">
+    
+                <h1 class="nav__title">Campus Shop</h1>
+    
+                <a href="#menu" class="nav__menu">
+                    <img src="./Pictures/body_main/menu.svg" class="nav__icon">
+                </a>
+    
+                <a href="#" class="nav__menu nav__menu--second">
+                    <img src="./Pictures/body_main/close.svg" class="nav__icon ">
+                </a>
+    
+                <ul class="dropdown" id="menu">
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <img src="./Pictures/body_main/house.svg" class="dropdown__icon">
+                            <span class="dropdown__span">Inicio</span>
+                        </a>
+                    </li>
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <img src="./Pictures/body_main/projects.svg" class="dropdown__icon">
+                            <span class="dropdown__span">Projects</span>
+                            <img src="./Pictures/body_main/down.svg" class="dropdown__arrow">
+    
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+    
+                        <div class="dropdown__content">
+    
+                            <ul class="dropdown__sub">
+    
+                                <li class="dropdown__li">
+                                    <a href="#" class="dropdown__anchor">Mario Mendoza</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a href="#" class="dropdown__anchor">Manga</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a href="#" class="dropdown__anchor">Filosia</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a href="#" class="dropdown__anchor">Estoicos   </a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a href="#" class="dropdown__anchor">Historia</a>
+                                </li>
+
+                            </ul>
+    
+                        </div>
+                    </li>
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <img src="./Pictures/body_main/email.svg" class="dropdown__icon">
+                            <span class="dropdown__span">Contacto</span>
+                            <img src="./Pictures/body_main/down.svg" class="dropdown__arrow">
+    
+                            <input type="checkbox" class="dropdown__check">
+                        </a>
+    
+                        <div class="dropdown__content">
+    
+                            <ul class="dropdown__sub">
+    
+                                <li class="dropdown__li">
+                                    <a href="#" class="dropdown__anchor">Contact 1</a>
+                                </li>
+                                <li class="dropdown__li">
+                                    <a href="#" class="dropdown__anchor">Contact 2</a>
+                                </li>
+                              
+    
+                            </ul>
+    
+                        </div>
+                    </li>
+    
+                    <li class="dropdown__list">
+                        <a href="#" class="dropdown__link">
+                            <img src="./Pictures/body_main/help.svg" class="dropdown__icon">
+                            <span class="dropdown__span">Ayuda</span>
+                        </a>
+                    </li>
+    
+                </ul>
+    
+            </div>
+    
+        </nav> 
     <main class="grid_1cont">
         <section class="grid_1">
             <div class="conteiner_1">  
              <h1 class="centrar">Compra un libro</h1>
             </div>
             <div class="conteiner_1">
-                <img src="Pictures/body_main/banner.png" alt="" >
+                <img src="Pictures/body_main/banner.png" alt="" class="img_banner">
             </div>
         </section>
     </main>    
