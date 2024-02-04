@@ -263,3 +263,153 @@ body {
 
 
 }
+/*PRODUCTOS*/
+.containerproducts{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 2px solid rgba(68, 68, 68, 0.308);
+    width: 80%; 
+    background-color: #526126;
+    margin: 0 auto; 
+    padding: 10px;
+}
+.containerimages{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100px 100px 100px 100px;
+    align-items: center;
+    max-width: 500px;
+    gap: 20px;
+    
+
+}
+.h2{
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+.h2:hover{
+    color: rgba(255, 0, 0, 0.479)
+}
+.productop1, .productop2, .productop3, .productop4{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgba(128, 128, 128, 0.527);
+    border-radius: 5px;
+}
+.p1,.p2,.p3, .p4{
+    width: 100%; 
+}
+.pg1,.pg2,.pg3, .pg4{
+    width: 100%;   
+}
+.productog1{
+    visibility: visible;
+    width: 400px;
+    height: auto;
+    max-height: 380px;
+    margin: 3%;
+    grid-column: 2/2;
+    grid-row: 1/span 4;
+    max-width: 90%;
+    overflow: hidden;
+}
+.productog2, .productog3, .productog4{
+    max-width: 90%;
+    visibility: hidden;
+    margin: 3%;
+    width: 500px;
+    max-height: 380px;
+
+    height: auto;
+    grid-column: 2/2;
+    grid-row: 1/span 4;
+    overflow: hidden;
+}
+.txtproduct{
+    text-align: justify;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.btn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: rgba(128, 128, 128, 0.527);
+    color: white;
+}
+.productop2:hover~.productog2{
+    visibility: visible;
+
+}
+.productop3:hover~.productog3{
+    visibility: visible;
+
+}
+.productop4:hover~.productog4{
+    visibility: visible;
+
+}
+.productop1:hover ,.productop2:hover ,.productop3:hover, .productop4:hover{
+    border: 2px solid #7DF0E3;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 1250px) {
+    .containerproducts{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 400px;
+        border: 2px solid rgba(68, 68, 68, 0.308);
+        width: 80%; 
+        background-color: #526126;
+        margin: 0 auto; 
+        padding: 10px;
+        overflow:scroll;
+    }
+    .containerimages{
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: 300px 100px;
+        align-items: center;
+        max-width: 500px;
+        gap: 20px
+    
+    }
+    .productop1, .productop2, .productop3, .productop4{
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(128, 128, 128, 0.527);
+        border-radius: 5px;
+    }
+    .productog1{
+        visibility: visible;
+        width: 200px;
+        height: auto;
+        max-height: 250px;
+        margin: 3%;
+        grid-column: 1/ span 4;
+        grid-row: 1/1;
+        max-width: 90%;
+        overflow: hidden;
+    }
+    .productog2, .productog3, .productog4{
+        max-width: 90%;
+        visibility: hidden;
+        margin: 3%;
+        width: 250px;
+        max-height: 250px;
+    
+        height: auto;
+        grid-column: 1/ span 4;
+        grid-row: 1/1;
+        overflow: hidden;
+    }
+    
+}
