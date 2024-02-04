@@ -207,6 +207,7 @@ body {
     justify-content: center;
 }
 .img_des{
+    margin: 0 auto;
     width: 200px;
     height: 300px;
     border: 5px ridge #526126;
@@ -219,20 +220,22 @@ body {
 }
 .grid_es{
     display: grid;
-    grid-template:  auto /auto auto;
+    display: flex;
+    grid-template:  auto /auto auto; 
     padding: 10%;
-    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
     background-color: #526126;
-    border-radius: 60px;
-
-
-
+    text-align: justify ;
 
 }
 
 .imgs_de{
     width: 50%;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    padding: 20%;
+    align-items: center;
+
 
 }
 .h1_cata{
@@ -241,17 +244,21 @@ body {
 }
 .imgm_ca{
     width: 20%;
-    height: 20%;
+    height:20%;
 
 }
 .imgs_de:hover{
 
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 .grid_es1{
+
     display: grid;
+    display: flex;
+    text-align: justify;
     grid-template:  auto /auto auto; 
     padding: 10%;
+    align-items: center;
     justify-content: center;
 
 
