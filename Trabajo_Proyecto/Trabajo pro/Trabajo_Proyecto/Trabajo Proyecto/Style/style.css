@@ -188,6 +188,7 @@ body {
     grid-template-rows: auto;
     padding: auto;
     background-color: #526126;
+    justify-content: space-evenly;
 
     
     
@@ -340,7 +341,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 .btn:hover{
-    background-color: rgba(128, 128, 128, 0.527);
+    background-color: #7b6823;
     color: white;
 }
 .productop2:hover~.productog2{
@@ -412,4 +413,210 @@ body {
         overflow: hidden;
     }
     
+}
+@media screen and (max-width: 600px) {
+    .img_banner{
+        margin: 0;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+
+        align-items: center;
+    }
+    .grid_2{
+        grid-template-columns: auto;  
+    }
+    .coteiner_2{
+        grid-template-rows: auto auto;
+    }
+}
+.contPagProducto {
+    margin: auto;
+    width: 90%;
+
+    background-color: var(--colorCuaternario);
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#caracteristicas, #descripcion {
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorSecundario);
+    text-align: center;
+    flex-direction: column;
+    z-index: 3;
+
+}
+#descripcion {
+    border-top: solid 2px var(--colorCuaternario);
+    text-align: left;
+    margin-top: 0;
+}
+
+.tablaInformacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+table {
+    border: 2px solid var(--colorTerciario);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid var(--colorTerciario);
+}
+
+.infoTxt {
+    width: 60%;
+}
+
+#reviews {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.review {
+    border: solid 2px var(--colorSecundario);
+    margin: 10px;
+    padding: 20px;
+}
+
+.txtReview {
+    color: var(--black);
+    padding: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .contPagProducto {
+        grid-template-columns: 100%;
+    }
+
+    .contImg {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+    }
+
+    .btnObtener {
+        width: 100%;
+    }
+
+    #reviews{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Camaras  Responsive*/
+    
+    .contImgGrandeCamara1 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCamara2 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCamara3 {
+        grid-column: 1 / span 2;
+    }
+    
+    .contImgGrandeCamara4 {
+        grid-column: 1 / span 2;
+    }
+
+    /* Camisas Responsiva */
+
+    .contImgGrandeCamisa1 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCamisa2 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCamisa3 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCamisa {
+        grid-column: 1 / span 2;
+    }
+
+    
+    /* Celalares Responsiva */
+    
+    .contImgGrandeCelular1 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCelular2 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCelular3 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeCelular4 {
+        grid-column: 1 / span 2;
+    }
+    
+    /* Portatiles Responsiva */
+
+    .contImgGrandePortatil1 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandePortatil2 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandePortatil3 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandePortatil4 {
+        grid-column: 1 / span 2;
+    }
+
+    /* Zapatos Responsiva */
+
+    .contImgGrandeZapato1 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeZapato2 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeZapato3 {
+        grid-column: 1 / span 2;
+    }
+
+    .contImgGrandeZapato4 {
+        grid-column: 1 / span 2;
+    }
 }
